@@ -1,0 +1,17 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+    "rushVersion": "5.34.1",
+    "pnpmVersion": "4.14.4",
+    "pnpmOptions": { "strictPeerDependencies": false, "resolutionStrategy": "fewer-dependencies" },
+    "nodeSupportedVersionRange": ">=12.13.0 <15.0.0",
+    "ensureConsistentVersions": true,
+    "projectFolderMinDepth": 2,
+    "projectFolderMaxDepth": 2,
+    "gitPolicy": {},
+    "repository": { "url": "", "defaultRemote": "origin" },
+    "eventHooks": { "preRushInstall": [], "postRushInstall": [], "preRushBuild": [], "postRushBuild": [] },
+    "variants": [],
+    "projects": [
+        { "packageName": "test", "projectFolder": "apps/test" }
+    ]
+}

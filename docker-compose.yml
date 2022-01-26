@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+    ui:
+        build:
+            context: .
+            dockerfile: ui/Dockerfile
+        ports:
+            - '32000:80'
+
+    test:
+        build:
+            context: .
+            dockerfile: test/Dockerfile
+        depends_on:
+            - ui
+        volumes:
+            - './videos:/test/videos'
+        environment:
+            - NO_COLOR=1
